@@ -1,0 +1,133 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.navbar button {
+    background-color: #444;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #555;
+}
+
+/* Search Section */
+#search-section {
+    display: block;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Search input and buttons */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container select, .search-container input, .search-container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.search-container button {
+    cursor: pointer;
+    background-color: #007BFF;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filters input, .filters select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+/* Table Styling */
+#results-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+#results-table th {
+    background-color: #444;
+}
+
+/* Upload Section */
+#upload-section {
+    display: block;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
