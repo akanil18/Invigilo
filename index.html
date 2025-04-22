@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invigilation Search</title>
+    <title>Invigilo – Invigilation Search</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <button id="nav-search">Search</button>
-        <button id="nav-upload">Upload PDF</button>
+        <div class="brand">📘 Invigilo</div>
     </nav>
 
-    <div id="search-section">
-        <h1>Invigilation Search</h1>
-        
+    <div id="search-section" class="fade-in">
+        <h1>Search Invigilation</h1>
         <div class="search-container">
             <select id="search-type">
                 <option value="teacher">Search by Teacher</option>
                 <option value="room">Search by Room</option>
             </select>
-            
             <input type="text" id="search-input" placeholder="Enter teacher name or room number" />
             <button id="search-button">Search</button>
         </div>
+    </div>
 
+    <div id="filter-section" class="hidden">
         <div class="filters">
-            <input type="text" id="filter-date" placeholder="Filter by Date" />
+            <input type="text" id="filter-date" placeholder="Filter by Date (e.g. 21st April)" />
             <input type="text" id="filter-room" placeholder="Filter by Room" />
             <select id="filter-shift">
                 <option value="">Filter by Shift</option>
@@ -45,17 +44,9 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Results will go here -->
+                <!-- Results will be rendered here -->
             </tbody>
         </table>
-    </div>
-
-    <div id="upload-section" style="display: none;">
-        <h1>Upload Invigilation PDF</h1>
-        <form id="upload-form">
-            <input type="file" id="pdf-file" accept="application/pdf" />
-            <button type="submit">Upload</button>
-        </form>
     </div>
 
     <script src="script.js"></script>
